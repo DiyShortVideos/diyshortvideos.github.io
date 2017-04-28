@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <!-- Site Properties -->
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ description }}">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js"></script>
+    <script src="/js/index.js"></script>
+</head>
+
+<body>
+    <div class="ui red inverted stackable menu">
+        <a class="item" href="/">
+            <img src="/img/ubersales-icon-Logo.svg" alt="">
+        </a>
+        <a class="item" data-popup="popup-offering" data-position="bottom left">
+            <i class="grid layout icon"></i>Features
+            <i class="dropdown icon"></i>
+        </a>
+        <a class="item" data-popup="popup-more" data-position="bottom left">
+    Resources
+    <i class="dropdown icon"></i>
+  </a>
+        <a class="item" href="/blog">
+    Blog
+  </a>
+        <a class="item">
+            <i class="user icon"></i>Sign In
+        </a>
+        <!--        <div class="right menu">
+            <button id="get-started-button-top" class="ui inverted button" modal-popup="modal-getstarted">
+                <i class="heart icon"></i>GET STARTED</button>
+        </div>-->
+
+        {{> header-2 }} {{{ contents }}} {{> footer }}
+
+
+</body>
+
+</html>
